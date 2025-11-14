@@ -1,57 +1,80 @@
-/* --- Global Styles --- */
+/* --- General Page Styling --- */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f0f4ff;  /* light blue background */
+    background: #f0f6ff;
 }
 
-/* --- Header --- */
+/* --- Gradient Header --- */
 header {
-    background: #003f8c; /* dark blue */
+    background: linear-gradient(90deg, #003f8c, #ff0040, #7b00ff, #00c8b3);
     color: white;
-    padding: 20px;
+    padding: 30px 20px;
     text-align: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
 }
 
-/* --- Navigation --- */
+/* --- Navigation Menu --- */
 nav a {
-    color: #ff4d4d;     /* red links */
-    margin: 0 15px;
+    color: white;
+    margin: 0 20px;
     text-decoration: none;
     font-weight: bold;
-    border-bottom: 2px solid transparent;
+    font-size: 18px;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    border-bottom: 2px solid #ff4d4d; /* red underline on hover */
+    color: #ffe066;
+    text-shadow: 0px 0px 10px white;
 }
 
-/* --- Main Container --- */
+/* --- Content Area --- */
 .container {
-    padding: 20px;
+    padding: 30px;
+    max-width: 900px;
+    margin: auto;
 }
 
-/* --- Headings --- */
+/* --- Section Titles --- */
 h1, h2, h3 {
-    color: #003f8c; /* blue text */
+    color: #003f8c;
 }
 
-/* --- Links inside container --- */
-a {
-    color: #ff4d4d; /* red color for important links */
+/* --- Card Boxes --- */
+.card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.12);
+    transition: 0.3s;
 }
 
-/* --- Optional Buttons --- */
-button, .btn {
-    background: #ff4d4d; /* red button */
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0px 6px 16px rgba(0,0,0,0.18);
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    background: #ff0040;
     color: white;
-    padding: 10px 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
-button:hover, .btn:hover {
-    background: #cc0000; /* darker red */
+.btn:hover {
+    background: #cc0033;
 }
+
+/* --- Contact Box --- */
+.contact-box {
+    background: white;
+    padding: 20px;
+    border-radius:
